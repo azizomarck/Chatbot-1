@@ -155,7 +155,7 @@ async function getWeather() {
     let lat = coordinates.lat;
     let lon = coordinates.lon;
 
-    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e80c522abcec7f0f2549264809902922`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e80c522abcec7f0f2549264809902922`;
     let response = await makeRequest("GET", url);
 
     response = JSON.parse(response);
